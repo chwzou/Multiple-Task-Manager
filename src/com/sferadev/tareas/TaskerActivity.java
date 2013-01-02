@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 
 
-public class MainActivity extends Activity {
+public class TaskerActivity extends Activity {
     
 	@Override
 	public void onBackPressed()
