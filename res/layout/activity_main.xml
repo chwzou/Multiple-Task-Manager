@@ -1,0 +1,195 @@
+<ScrollView>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top" >
+       
+
+        <TableRow
+            android:id="@+id/Titulo1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" >
+
+            <EditText
+                android:id="@+id/Text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:hint="@string/Tarea1"
+                android:inputType="textPersonName"
+                android:textSize="15sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <Chronometer
+                android:id="@+id/chronometer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Chronometer"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Barra1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Titulo1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/start1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Start"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/stop1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Stop"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/reset1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Restart"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Titulo2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Barra1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" >
+
+            <EditText
+                android:id="@+id/Text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:hint="@string/Tarea2"
+                android:inputType="textPersonName"
+                android:textSize="15sp" />
+
+            <Chronometer
+                android:id="@+id/Chronometer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Chronometer"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Barra2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Barra1"
+            android:layout_below="@+id/Titulo2"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/Start2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Start"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/Stop2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Stop"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/Reset2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Restart"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Titulo3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Titulo2"
+            android:layout_below="@+id/Barra2"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" >
+
+            <EditText
+                android:id="@+id/Text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:hint="@string/Tarea3"
+                android:inputType="textPersonName"
+                android:textSize="15sp" />
+
+            <Chronometer
+                android:id="@+id/Chronometer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Chronometer"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Barra3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Barra2"
+            android:layout_below="@+id/Titulo3"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/Start3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Start"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/Stop3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Stop"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/Reset3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Restart"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+    </RelativeLayout>
+</ScrollView>

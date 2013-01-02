@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Tasker</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Task Manager</string>
+    <string name="Start">  Empieza  </string>
+    <string name="Tarea1">Primera Tarea</string>
+    <string name="Tarea2">Segunda Tarea</string>
+    <string name="Tarea3">Tercera Tarea</string>
+    <string name="Tarea4">Cuarta Tarea</string>
+    <string name="Stop">  Para  </string>
+    <string name="Restart"> Reinicia </string>
+    <string name="StartAll"> Empieza Todas </string>
+</resources>
