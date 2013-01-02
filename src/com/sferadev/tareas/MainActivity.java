@@ -17,7 +17,19 @@ public class MainActivity extends Activity {
     Chronometer crono2;
     Chronometer crono3;
 
-    
+    @Override
+public void onBackPressed() {
+    new AlertDialog.Builder(this)
+        .setTitle("Do you want to Exit?")
+        .setMessage("Are you sure you want to exit? All Timers will be reseted!")
+        .setNegativeButton(android.R.string.no, null)
+        .setPositiveButton(android.R.string.yes, new OnClickListener() {
+
+            public void onClick(DialogInterface arg0, int arg1) {
+                MainActivity.super.onBackPressed();
+            }
+        }).create().show();
+}
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
