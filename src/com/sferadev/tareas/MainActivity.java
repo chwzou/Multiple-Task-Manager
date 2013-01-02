@@ -3,34 +3,33 @@ package com.sferadev.tareas;
 import com.sferadev.tareas.R;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Chronometer;
+import android.widget.Toast;
+
 
 
 public class MainActivity extends Activity {
-    Chronometer crono1;
+    
+	@Override
+	public void onBackPressed()
+	{
+	      moveTaskToBack(true);
+	}
+	
+	Chronometer crono1;
     Chronometer crono2;
     Chronometer crono3;
 
-    @Override
-public void onBackPressed() {
-    new AlertDialog.Builder(this)
-        .setTitle("Do you want to Exit?")
-        .setMessage("Are you sure you want to exit? All Timers will be reseted!")
-        .setNegativeButton(android.R.string.no, null)
-        .setPositiveButton(android.R.string.yes, new OnClickListener() {
-
-            public void onClick(DialogInterface arg0, int arg1) {
-                MainActivity.super.onBackPressed();
-            }
-        }).create().show();
-}
-    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

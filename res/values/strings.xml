@@ -11,4 +11,6 @@
     <string name="Stop">  Stop  </string>
     <string name="Restart"> Restart </string>
     <string name="StartAll"> Start All </string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
 </resources>
