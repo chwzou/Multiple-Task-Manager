@@ -1,7 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sferadev.tareas"
+    android:installLocation="auto"
     android:versionCode="2"
-    android:versionName="2.3" android:installLocation="auto">
+    android:versionName="2.4" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -12,14 +14,18 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".TaskerActivity"
-	    android:configChanges="orientation|keyboardHidden|screenSize"
+            android:name="com.sferadev.tareas.TaskerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sferadev.tareas.AboutActivity"
+            android:label="@string/title_activity_about" >
         </activity>
     </application>
 

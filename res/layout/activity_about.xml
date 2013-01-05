@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="7dp"
+    android:orientation="vertical"
+    tools:context=".AboutActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/about_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/about_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button_xda"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:text="@string/button_xda"
+        android:drawableRight="@drawable/xda"
+        android:onClick="click_xda" />
+
+    <Button
+        android:id="@+id/button_github"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:text="@string/button_github" 
+        android:drawableRight="@drawable/github"
+        android:onClick="click_github" />
+
+    <Button
+        android:id="@+id/button_paypal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:text="@string/button_paypal"
+        android:drawableRight="@drawable/paypal"
+        android:onClick="click_paypal" />
+
+</LinearLayout>

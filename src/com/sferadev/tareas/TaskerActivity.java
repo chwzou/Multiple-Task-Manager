@@ -5,11 +5,13 @@ import com.sferadev.tareas.R;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -115,7 +117,25 @@ public class TaskerActivity extends Activity {
         };
         
         
+        @Override
+    	public boolean onCreateOptionsMenu(Menu menu) {
+    		// Inflate the menu; this adds items to the action bar if it is present.
+    		getMenuInflater().inflate(R.menu.activity_main, menu);
+    		return true;
+    	}
+        
+        @Override
+    	public boolean onOptionsItemSelected(MenuItem item) {
+    		switch (item.getItemId()) {
+    		case R.id.exit:
+    			moveTaskToBack(true);
+    			
+    		case R.id.about:
+    			Intent intent = new Intent(this, AboutActivity.class);
+    	        this.startActivity(intent);
+    	        break;
+    			
+    		}
+			return true;
+        }     
 }
-
-
-
