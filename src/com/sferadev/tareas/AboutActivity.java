@@ -18,14 +18,14 @@ public class AboutActivity extends Activity {
 	    }
 	
     public void click_xda(View v) {
-        String url = "https://github.com/SferaDev/Multiple-Task-Manager";
+        String url = "http://forum.xda-developers.com/showthread.php?t=2078102";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         startActivity(i);
 	}
 	
     public void click_github(View v) {
-        String url = "http://forum.xda-developers.com/showthread.php?t=2078102";
+        String url = "https://github.com/SferaDev/Multiple-Task-Manager";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         startActivity(i);
@@ -49,10 +49,13 @@ public class AboutActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.exit:
-			finish();
-    			break;
+			Intent intent = new Intent(this, TaskerActivity.class);
+        		this.startActivity(intent);
+        		break;
+        	default:
+        		return super.onOptionsItemSelected(item);
 		}
-		return false;
+		return true;
     }    
 	
 }
