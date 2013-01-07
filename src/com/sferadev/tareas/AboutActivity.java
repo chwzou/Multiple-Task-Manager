@@ -49,9 +49,10 @@ public class AboutActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.exit:
-			moveTaskToBack(true);
+			finish();
+    			break;
 		}
-		return true;
+		return false;
     }    
 	
 }
