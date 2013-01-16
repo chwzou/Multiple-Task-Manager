@@ -38,21 +38,5 @@ public class AboutActivity extends Activity {
         startActivity(i);
 	}
     
-
-<<<<<<< HEAD
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-		case R.id.exit:
-			Intent intent = new Intent(this, TaskerActivity.class);
-        		this.startActivity(intent);
-        		break;
-        	default:
-        		return super.onOptionsItemSelected(item);
-		}
-		return true;
-    }    
-=======
->>>>>>> Version 2.5
 	
 }

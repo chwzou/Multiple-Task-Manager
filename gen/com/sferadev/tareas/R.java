@@ -41,12 +41,13 @@ public final class R {
         public static final int Titulo1=0x7f080005;
         public static final int Titulo2=0x7f08000c;
         public static final int Titulo3=0x7f080013;
-        public static final int about=0x7f08001a;
+        public static final int about=0x7f08001b;
+        public static final int about_exit=0x7f08001a;
         public static final int button_github=0x7f080003;
         public static final int button_paypal=0x7f080004;
         public static final int button_xda=0x7f080002;
         public static final int chronometer1=0x7f080007;
-        public static final int exit=0x7f08001b;
+        public static final int exit=0x7f08001c;
         public static final int reset1=0x7f08000b;
         public static final int start1=0x7f080009;
         public static final int stop1=0x7f08000a;
@@ -58,7 +59,8 @@ public final class R {
         public static final int activity_main=0x7f030001;
     }
     public static final class menu {
-        public static final int activity_main=0x7f070000;
+        public static final int activity_about=0x7f070000;
+        public static final int activity_main=0x7f070001;
     }
     public static final class string {
         public static final int Restart=0x7f05000a;
