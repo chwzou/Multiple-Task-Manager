@@ -28,6 +28,15 @@ public class TaskerActivity extends Activity {
 	      moveTaskToBack(true);
 	}
 	
+	@Override
+	public boolean onKeyLongPress( int keyCode, KeyEvent event ) {
+		if( keyCode == KeyEvent.KEYCODE_BACK ) {
+			super.finish();
+			return true;
+		}
+		return super.onKeyLongPress(keyCode, event);
+	}
+	
 	Chronometer crono1;
     Chronometer crono2;
     Chronometer crono3;
@@ -128,7 +137,8 @@ public class TaskerActivity extends Activity {
     	public boolean onOptionsItemSelected(MenuItem item) {
     		switch (item.getItemId()) {
     		case R.id.exit:
-    			moveTaskToBack(true);
+    			finish();
+    			return true;
     			
     		case R.id.about:
     			Intent intent = new Intent(this, AboutActivity.class);
@@ -136,6 +146,6 @@ public class TaskerActivity extends Activity {
     	        break;
     			
     		}
-			return true;
+			return false;
         }     
 }

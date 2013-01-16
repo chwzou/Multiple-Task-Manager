@@ -38,13 +38,8 @@ public class AboutActivity extends Activity {
         startActivity(i);
 	}
     
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_about, menu);
-		return true;
-	}
 
+<<<<<<< HEAD
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
@@ -57,5 +52,7 @@ public class AboutActivity extends Activity {
 		}
 		return true;
     }    
+=======
+>>>>>>> Version 2.5
 	
 }

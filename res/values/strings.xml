@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Multiple Task Manager</string>
-    <string name="menu_about">About Task Manager</string><string name="about_title">About Task Manager</string>
+    <string name="menu_about">About</string><string name="about_title">About Task Manager</string>
     <string name="title_activity_main">Task Manager</string>
     <string name="Start">  Start  </string>
     <string name="Tarea1">First Task</string>
