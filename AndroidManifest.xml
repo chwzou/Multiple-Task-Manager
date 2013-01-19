@@ -3,7 +3,7 @@
     package="com.sferadev.tareas"
     android:installLocation="auto"
     android:versionCode="2"
-    android:versionName="2.5" >
+    android:versionName="2.6" >
 
     <uses-sdk
         android:minSdkVersion="8"
