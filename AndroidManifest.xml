@@ -6,7 +6,7 @@
     android:versionName="2.6" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="7"
         android:targetSdkVersion="17" />
 
     <application
